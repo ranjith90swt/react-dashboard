@@ -4,6 +4,7 @@ import AcmeAdvanced from './charts/AcmeAdvanced'
 import AcmeProfessional from './charts/AcmeProfessional'
 import DirectIndirect from './charts/DirectIndirect'
 import RealTimeValue from './charts/RealTimeValue'
+import TopCountries from './charts/TopCountries'
 
 const Dashboard = () => {
   return (
@@ -53,6 +54,15 @@ const Dashboard = () => {
           <div className="card">
               <h4>Google Map</h4>
               <RealTimeValue />
+          </div>
+        </div>
+      </div>
+
+      <div className="wrap">
+        <div className="box33">
+          <div className="card">
+              <h4>Google Map</h4>
+              <TopCountries />
           </div>
         </div>
       </div>
