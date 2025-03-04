@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  --primary : #816DFD ; 
+}
+body{
+  font-family: "Montserrat", sans-serif;
+
+}
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  color: rgb(37, 37, 37);
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+}
+.sidebar .logo{
+  font-size: 32px; color: var(--primary);
+}
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+.sidebar li a {
+  color: #222; text-decoration: none;
+}
+
+.main-content {
+  margin-left: 260px;
+  flex-grow: 1;
+  padding: 30px 40px;
+  overflow-y: auto;
+  height:auto;
+}
+
+
+.title-head{ 
+  display: flex; justify-content: space-between;
+  padding: 16px 10px;
+}
+
+.add-btn{
+  border: none; padding: 10px 16px; border-radius: 2px;
+  background: #0E1321;
+  color: #fff;
+  font-size: 14px; text-transform: capitalize;
+}
+
+.light-btn{
+  border: none; padding: 10px 16px; border-radius: 2px;
+  display: inline-block; background: #fff; color: #777777; font-size: 14px;
+  margin-right: 10px;
+}
+.main-title{
+  font-size: 20px; font-weight: 500;
+}
+
+.wrap{
+  display: flex; margin: 16px 0;
+  width: 100%; 
+  flex-wrap: wrap;
+}
+
+.box33{
+  width: 33.33%; box-sizing: border-box;
+  padding: 0 10px;
+}
+.box67{
+  width: 66.66%; box-sizing: border-box;
+  padding: 0 10px;
+}
+.box50{
+  width: 50%; box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.card{
+  display: block; background: #fff; border-radius: 10px;
+  padding: 16px; min-height: 200px; 
+}
+.card h4{
+  font-size: 16px; margin: 0; color: #222; font-weight: 600;
+}
+
+
+.small-text{
+  font-size: 13px; color: #777777; text-transform: uppercase; font-weight: 500;
+  margin: 10px 0;
+}
+.chart-title{
+  font-size: 36px; color: #000; font-weight: 700; display: flex;
+  margin: 10px 0; line-height: 40px;
+}
+
+.chart-title .icon{
+  font-size: 14px;
+}
+.chart-title span{
+  font-size: 14px; color: #777;
+
+}
