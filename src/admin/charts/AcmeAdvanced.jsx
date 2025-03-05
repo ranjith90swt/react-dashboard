@@ -33,7 +33,7 @@ const AcmeAdvanced = () => {
   return (
     <div>
         <h6 className='small-text'>Sales </h6>
-        <h3 className='chart-title'>$28,780</h3>
+        <h3 className='chart-title'>$28,780 <div className="badge badge-danger">-14%</div></h3>
         <div style={{ width: "100%", height: 120 }}>
             <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={data}>

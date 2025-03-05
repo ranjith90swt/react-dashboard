@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { AreaChart, Area, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
 
 const generateSalesData = () => ({
-    time: new Date().toLocaleTimeString().split(" ")[0], // Show HH:MM:SS only
-    sales: Math.floor(Math.random() * 1000) + 500, // Random sales between 500 - 1500
+    time: new Date().toLocaleTimeString().split(" ")[0], 
+    sales: Math.floor(Math.random() * 1000) + 500, 
   });
 const RealTimeValue = () => {
 
@@ -12,15 +12,16 @@ const RealTimeValue = () => {
       const interval = setInterval(() => {
         setData((prevData) => {
           const newData = [...prevData, generateSalesData()];
-          return newData.length > 10 ? newData.slice(1) : newData; // Keep last 10 points
+          return newData.length > 10 ? newData.slice(1) : newData; 
         });
-      }, 1000); // Update every second
+      }, 1000); 
   
-      return () => clearInterval(interval); // Cleanup on unmount
+      return () => clearInterval(interval); 
     }, []);
     
   return (
     <div>
+        <h3 className='chart-title'>$57.76 <div className="badge badge-danger">-0.10%</div></h3>
         <ResponsiveContainer width="100%" height={250}>
             <AreaChart data={data}>
                 <CartesianGrid strokeDasharray="3 3" />

@@ -18,7 +18,7 @@ const AcmeProfessional = () => {
   return (
     <div>
         <h6 className='small-text'>Sales </h6>
-        <h3 className='chart-title'>$34,780</h3>
+        <h3 className='chart-title'>$34,780 <div className="badge badge-success">+49%</div></h3>
         
         <div style={{ width: "100%", height: 120}}>
             
