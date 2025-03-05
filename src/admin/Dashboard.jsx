@@ -45,7 +45,7 @@ const Dashboard = () => {
 
         <div className="box33">
           <div className="card">
-              <h4 >Google Map <span><BsThreeDots /></span></h4>
+              <h4 >Acme Professional <span><BsThreeDots /></span></h4>
               <AcmeProfessional/>
           </div>
         </div>

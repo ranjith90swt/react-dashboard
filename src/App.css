@@ -296,7 +296,7 @@ body{
 .off-canvas {
   position: fixed;
   top: 0;
-  left: -250px; /* Initially off-screen */
+  left: -250px; 
   width: 250px;
   height: 100%;
   background: #fff;
@@ -306,7 +306,7 @@ body{
 }
 
 .off-canvas.open {
-  left: 0; /* Slide in from the left */
+  left: 0; 
 }
 
 
@@ -322,7 +322,7 @@ body{
 }
 
 .overlay.open {
-  display: block; /* Show the overlay when menu is open */
+  display: block; 
 }
 
 @media screen and (max-width:575px){
