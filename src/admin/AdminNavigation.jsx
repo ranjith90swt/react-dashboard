@@ -3,6 +3,8 @@ import { FaRegDotCircle } from "react-icons/fa";
 import { FaCircleNotch } from "react-icons/fa";
 import { LuShare2 } from "react-icons/lu";
 import { Link, useLocation } from 'react-router-dom';
+import { IoClose } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 
 const AdminNavigation = () => {
 
@@ -13,8 +15,8 @@ const AdminNavigation = () => {
   };
 
   useEffect(() => {
-    setIsMenuOpen(false); // Close the menu on route change
-  }, [location]); // Dependency array ensures this runs when the route changes
+    setIsMenuOpen(false); 
+  }, [location]); 
 
 
   return (
@@ -24,7 +26,7 @@ const AdminNavigation = () => {
         <div className="side-header">
             <div className="logo"><FaRegDotCircle /></div>
             <span className={`close ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-            {isMenuOpen ? 'X' : '☰'} {/* Hamburger or Close icon */}
+            {isMenuOpen ? <IoClose /> : <IoMenu />} 
             </span>
             
         </div>
