@@ -20,6 +20,7 @@ body{
   padding: 20px;
   position: fixed;
   height: 100%;
+  z-index: 23;
 }
 .sidebar .side-header{
   display: flex; justify-content: space-between;  margin: 0; padding: 0;
@@ -39,7 +40,7 @@ body{
 }
 
 .sidebar li {
-  margin: 12px 0;
+  margin: 12px 0; display: flex; align-items: center;
   cursor: pointer;
 }
 .sidebar li .navlink {
